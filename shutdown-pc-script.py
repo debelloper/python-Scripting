@@ -2,7 +2,13 @@ import os
 import platform
 import sys
 import subprocess
+import time
 
+
+# Requesting administrative privileges on Windows
+if time.platform == "win32":
+    import ctypes
+    ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, __file__, None, 1)
 
 # Function to shut down the PC
 def shutdown_pc(): 
