@@ -12,6 +12,7 @@ def search_files(directory, pattern):
                 matches.append(os.path.join(root, filename))
     return matches
 
+# Main function to handle command-line arguments and initiate the search
 def main():
     parser = argparse.ArgumentParser(description="Search for files matching a pattern in a directory.")
     parser.add_argument("directory", help="The directory to search in")
