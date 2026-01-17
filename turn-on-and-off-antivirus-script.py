@@ -34,7 +34,6 @@ def main():
     parser.add_argument("action", choices=['on', 'off'], help="Action to perform: 'on' to enable antivirus, 'off' to disable antivirus")
     
     args = parser.parse_args()
-    
     toggle_antivirus(args.action)
 
 if __name__ == "__main__": # Entry point of the script
