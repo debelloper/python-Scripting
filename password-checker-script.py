@@ -14,11 +14,13 @@ def check_password(password):
     return False
   return True
 
-# Test the function with example passwords
-for password in ["12345678", "Abcd@1234"]:
-  if(check_password(password)):
-    print(password, " is a strong password.")
+def main():
+  password = input("Enter a password to check its strength: ")
+  if check_password(password):
+    print("The password is strong.")
   else:
-    print(password, "is a weak password.")
+    print("The password is weak. It should be at least 8 characters long and include uppercase letters, lowercase letters, numbers, and special characters (@, #, $, ^, &).")   
 
-    
+
+if __name__ == "__main__": # Entry point of the script
+    main()
