@@ -5,6 +5,8 @@ import subprocess
 import time
 
 
+# close all apps before shutting down
+
 # Requesting administrative privileges on Windows
 if time.platform == "win32":
     import ctypes
