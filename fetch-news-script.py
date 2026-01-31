@@ -8,9 +8,13 @@ print(newsapi)
 top_headlines = newsapi.get_top_headlines(language='en', country='in')
 
 if top_headlines:
-    for article in top_headlines["articles"]:
-        title = article["title"]
-        print(f"Title: {title}\n")
+    def main():
+        for article in top_headlines["articles"]:
+            title = article["title"]
+            print(f"Title: {title}\n")
 else:
     print("No articles found.")
 
+
+if __name__ == "__main__":
+    main()
