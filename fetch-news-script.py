@@ -19,4 +19,4 @@ else:
 
 
 if __name__ == "__main__":
-    main()
+    main() # to call main function
