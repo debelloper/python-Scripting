@@ -24,12 +24,12 @@ def scan_wifi():
     return networks
 
 
-def connect_wifi(ssid):
+def connect_wifi(ssid): # Connect to the specified WiFi network
     print(f"Connecting to open WiFi: {ssid}")
     subprocess.call(f'netsh wlan connect name="{ssid}"', shell=True)
 
 
-def main():
+def main(): # Main function to scan and connect to open WiFi networks
     networks = scan_wifi()
 
     if not networks:
