@@ -1,4 +1,4 @@
-import socket
+import socket # Import the socket library for network communication
 
 target = input("Enter target IP or domain: ")
 start_port = int(input("Enter start port: "))
@@ -10,7 +10,7 @@ for port in range(start_port, end_port + 1):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     socket.setdefaulttimeout(0.5)
 
-    result = s.connect_ex((target, port))
+    result = s.connect_ex((target, port)) # Attempt to connect to the target on the specified port and check if it's open (returns 0 if open)
 
     if result == 0:
         print(f"Port {port} is OPEN")
