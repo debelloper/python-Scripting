@@ -16,3 +16,6 @@ def scan(port):
 for port in ports:
     thread = threading.Thread(target=scan, args=(port,))
     thread.start()
+
+if __name__ == "__main__":
+    print(f"Scanning {target} for open ports...")
