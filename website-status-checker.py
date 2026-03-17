@@ -1,6 +1,6 @@
-import requests
+import requests # pip install requests
 
-sites = ["https://google.com", "https://github.com"]
+sites = ["https://google.com", "https://github.com"] # Add more sites to check here
 
 for site in sites:
     try:
@@ -8,3 +8,4 @@ for site in sites:
         print(site, "UP")
     except:
         print(site, "DOWN")
+        
