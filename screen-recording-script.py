@@ -1,5 +1,5 @@
 import pyautogui # type: ignore
-import cvpython script.py2 # type: ignore
+import cv2 # type: ignore
 import numpy as np # type: ignore
 
 # Get screen resolution
