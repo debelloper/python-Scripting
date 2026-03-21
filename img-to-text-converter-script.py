@@ -41,3 +41,7 @@ text = pytesseract.image_to_string(gray, config="--psm 6")
 # for saving to extrracted file
 with open("output.txt", "w") as f:
     f.write(text)
+
+if __name__ == "__main__":
+    print("Website status check completed.")
+    
