@@ -43,5 +43,4 @@ with open("output.txt", "w") as f:
     f.write(text)
 
 if __name__ == "__main__":
-    print("Website status check completed.")
-    
+    print("Text was generated successfully")
